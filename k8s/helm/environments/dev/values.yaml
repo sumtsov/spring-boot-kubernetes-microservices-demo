@@ -1,0 +1,23 @@
+ingress:
+  host: minikube.me
+  paths:
+    - path: /oauth2
+      service: authorization
+    - path: /sku-composite
+      service: sku-composite
+    - path: /actuator/health
+      service: sku-composite
+    - path: /openapi
+      service: sku-composite
+    - path: /webjars
+      service: sku-composite
+
+secrets:
+  postgres-credentials:
+    POSTGRES_USER: review_db_user
+    POSTGRES_PASSWORD: review_db_pass
+    POSTGRES_DB: review_db
+
+postgres: 
+  envFromSecretRefs:
+    - postgres-credentials

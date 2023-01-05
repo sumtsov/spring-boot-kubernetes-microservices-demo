@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+springdoc:
+  swagger-ui:
+    path: /openapi/swagger-ui.html
+  api-docs:
+    path: /openapi/v3/api-docs
+  packagesToScan: com.dsumtsov.sku.composite
+  pathsToMatch: /**
+
+kafka:
+  topic:
+    sku: sku
+    review: review
+    recommendation: recommendation
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9999
+

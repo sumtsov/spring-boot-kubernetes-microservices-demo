@@ -1,0 +1,47 @@
+apiVersion: v2
+appVersion: "1.0"
+description: A Helm chart for microservices running in Dev Environment
+name: dev
+version: 1.0.0
+
+dependencies:
+
+  - name: common
+    version: 1.0.0
+    repository: file://../../common
+
+  - name: kafka
+    version: 1.0.0
+    repository: file://../../components/kafka
+
+  - name: zookeeper 
+    version: 1.0.0 
+    repository: file://../../components/zookeeper
+
+  - name: mongodb
+    version: 1.0.0
+    repository: file://../../components/mongodb
+
+  - name: postgres
+    version: 1.0.0
+    repository: file://../../components/postgres
+
+  - name: authorization
+    version: 1.0.0
+    repository: file://../../components/authorization
+
+  - name: sku
+    version: 1.0.0
+    repository: file://../../components/sku
+
+  - name: recommendation
+    version: 1.0.0
+    repository: file://../../components/recommendation
+
+  - name: review
+    version: 1.0.0
+    repository: file://../../components/review
+
+  - name: sku-composite
+    version: 1.0.0
+    repository: file://../../components/sku-composite

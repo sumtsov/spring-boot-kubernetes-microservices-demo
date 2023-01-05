@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  data:
+    mongodb:
+      port: 27017
+      database: sku_db
+
+kafka:
+  topic:
+    sku: sku
+
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG

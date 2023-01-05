@@ -1,0 +1,18 @@
+fullnameOverride: zookeeper
+
+image:
+  repository: registry.hub.docker.com/library
+  name: confluentinc/cp-zookeeper
+  tag: 6.1.9
+  pullPolicy: IfNotPresent
+
+env: 
+  ZOOKEEPER_CLIENT_PORT: 2181
+  ZOOKEEPER_TICK_TIME: 2000 
+
+ports:
+  - containerPort: 2181
+
+service:
+  ports:
+    - port: 2181

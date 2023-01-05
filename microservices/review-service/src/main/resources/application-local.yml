@@ -1,0 +1,11 @@
+server:
+  port: 8083
+
+spring:
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/review_db"
+    username: review_db_user
+    password: review_db_pass
+
+kafka:
+  bootstrap-servers: localhost:9092

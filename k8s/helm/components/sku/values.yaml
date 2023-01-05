@@ -1,0 +1,13 @@
+fullnameOverride: sku
+
+image:
+  name: sku-service
+
+env:
+  SPRING_PROFILES_ACTIVE: "k8s"
+  MONGODB_HOST: "mongodb"
+  KAFKA_BOOTSTRAP_SERVERS: "kafka:9092"
+
+livenessProbe_enabled: true
+
+readinessProbe_enabled: true

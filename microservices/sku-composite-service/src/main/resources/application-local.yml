@@ -1,0 +1,11 @@
+client:
+  endpoints:
+    sku:
+      url: localhost:8081
+    recommendation:
+      url: localhost:8082
+    review:
+      url: localhost:8083
+
+kafka:
+  bootstrap-servers: localhost:9092

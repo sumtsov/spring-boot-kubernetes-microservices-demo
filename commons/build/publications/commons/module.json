@@ -1,0 +1,103 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.dsumtsov",
+    "module": "commons",
+    "version": "1.0-SNAPSHOT",
+    "attributes": {
+      "org.gradle.status": "integration"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.4.2"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "commons-1.0-SNAPSHOT.jar",
+          "url": "commons-1.0-SNAPSHOT.jar",
+          "size": 15443,
+          "sha512": "f776e45d8b56f675733852a8e1fb0936db61514661cc4e40bcac89ac9374b5a3f60b5f4945d081fb6ebab28573984a5bec40f066de4c2a4896538ba751acee0d",
+          "sha256": "7d946e74d3a58c2400eceff3864188e52a73592147a9efe79a4da7a29a0d8a43",
+          "sha1": "b31fe85341a0ffcaf831950d4c2569f5ca452dba",
+          "md5": "bd24855f3ed0386c11eeb88b47107ec6"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 17,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.springframework.boot",
+          "module": "spring-boot-starter-webflux"
+        },
+        {
+          "group": "com.fasterxml.jackson.module",
+          "module": "jackson-module-kotlin"
+        },
+        {
+          "group": "io.projectreactor.kotlin",
+          "module": "reactor-kotlin-extensions"
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-reflect",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib-jdk8",
+          "version": {
+            "requires": "1.7.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-reactor"
+        },
+        {
+          "group": "io.github.microutils",
+          "module": "kotlin-logging-jvm",
+          "version": {
+            "requires": "2.1.23"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "commons-1.0-SNAPSHOT.jar",
+          "url": "commons-1.0-SNAPSHOT.jar",
+          "size": 15443,
+          "sha512": "f776e45d8b56f675733852a8e1fb0936db61514661cc4e40bcac89ac9374b5a3f60b5f4945d081fb6ebab28573984a5bec40f066de4c2a4896538ba751acee0d",
+          "sha256": "7d946e74d3a58c2400eceff3864188e52a73592147a9efe79a4da7a29a0d8a43",
+          "sha1": "b31fe85341a0ffcaf831950d4c2569f5ca452dba",
+          "md5": "bd24855f3ed0386c11eeb88b47107ec6"
+        }
+      ]
+    }
+  ]
+}

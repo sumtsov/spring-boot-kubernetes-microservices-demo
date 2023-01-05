@@ -1,0 +1,6 @@
+include ':commons'
+include ':microservices:sku-composite-service'
+include ':microservices:sku-service'
+include ':microservices:review-service'
+include ':microservices:recomendation-service'
+include ':microservices:authorization-service'

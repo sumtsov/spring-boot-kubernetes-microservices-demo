@@ -1,0 +1,11 @@
+fullnameOverride: authorization-service
+
+image:
+  name: authorization-service
+
+env:
+  SPRING_PROFILES_ACTIVE: "k8s"
+
+livenessProbe_enabled: true
+
+readinessProbe_enabled: true

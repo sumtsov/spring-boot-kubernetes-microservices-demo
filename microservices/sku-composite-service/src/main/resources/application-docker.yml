@@ -1,0 +1,11 @@
+client:
+  endpoints:
+    sku:
+      url: sku:8080
+    recommendation:
+      url: recommendation:8080
+    review:
+      url: review:8080
+
+kafka:
+  bootstrap-servers: kafka:9092

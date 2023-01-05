@@ -1,0 +1,33 @@
+dependencies:
+- name: common
+  repository: file://../../common
+  version: 1.0.0
+- name: kafka
+  repository: file://../../components/kafka
+  version: 1.0.0
+- name: zookeeper
+  repository: file://../../components/zookeeper
+  version: 1.0.0
+- name: mongodb
+  repository: file://../../components/mongodb
+  version: 1.0.0
+- name: postgres
+  repository: file://../../components/postgres
+  version: 1.0.0
+- name: authorization
+  repository: file://../../components/authorization
+  version: 1.0.0
+- name: sku
+  repository: file://../../components/sku
+  version: 1.0.0
+- name: recommendation
+  repository: file://../../components/recommendation
+  version: 1.0.0
+- name: review
+  repository: file://../../components/review
+  version: 1.0.0
+- name: sku-composite
+  repository: file://../../components/sku-composite
+  version: 1.0.0
+digest: sha256:1ca01ab3384aaf32df39e5b7bf1fa190d75abaebf75f6bc98f58d524ade397f5
+generated: "2023-01-06T18:10:41.078486686+03:00"

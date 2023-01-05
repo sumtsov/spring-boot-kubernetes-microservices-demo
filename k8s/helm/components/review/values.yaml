@@ -1,0 +1,15 @@
+fullnameOverride: review
+
+image:
+  name: review-service
+
+env:
+  SPRING_PROFILES_ACTIVE: "k8s"
+  DB_HOST: "jdbc:postgresql://postgres:5432/review_db"
+  DB_USERNAME: "review_db_user"
+  DB_PASSWORD: "review_db_pass"
+  KAFKA_BOOTSTRAP_SERVERS: "kafka:9092"
+
+livenessProbe_enabled: true
+
+readinessProbe_enabled: true

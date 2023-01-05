@@ -1,0 +1,15 @@
+fullnameOverride: sku-composite
+
+image:
+  name: sku-composite-service
+
+env:
+  SPRING_PROFILES_ACTIVE: "k8s"
+  CLIENT_HOST_SKU: "sku:80"
+  CLIENT_HOST_REVIEW: "review:80"
+  CLIENT_HOST_RECOMMENDATION: "recommendation:80"
+  KAFKA_BOOTSTRAP_SERVERS: "kafka:9092"
+
+livenessProbe_enabled: true
+
+readinessProbe_enabled: true

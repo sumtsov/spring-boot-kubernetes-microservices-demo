@@ -17,12 +17,6 @@ repositories {
     maven { url = uri("https://repo.spring.io/milestone") }
 }
 
-buildscript {
-    dependencies {
-        classpath("io.spring.gradle:dependency-management-plugin:1.0.10.RELEASE")
-    }
-}
-
 val springDocVersion = "2.0.0"
 val springCloudVersion = "2022.0.0-RC3"
 val commonsVersion = "1.0-SNAPSHOT"
